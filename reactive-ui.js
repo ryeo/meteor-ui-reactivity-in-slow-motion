@@ -27,7 +27,7 @@ if (Meteor.isClient) {
       return DocumentCollection.find();
     },
 
-    onlyParentTemplateReactive: function () {
+    onlyParentTemplateReactivelyUpdates: function () {
       // Calling find() sets up a reactive context. So if any data in
       // the cursor changes, this context will be invalidated and the
       // list template will be re-rendered. The key takeaway is that
