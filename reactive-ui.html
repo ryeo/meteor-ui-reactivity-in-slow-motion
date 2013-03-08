@@ -1,0 +1,19 @@
+<head>
+  <title>reactive-ui</title>
+</head>
+
+<body>
+  {{> list}}
+</body>
+
+<template name="list">
+  <ul>
+    {{#each items}}
+      {{> listItem}}
+    {{/each}}
+  </ul>
+</template>
+
+<template name="listItem">
+  <li>{{title}}</li>
+</template>
